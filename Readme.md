@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Max Sharing](https://up.htmlacademy.ru/htmlcss/32/user/276123).
-* Наставник: `Неизвестно`.
+* Студент: [Max Sharing](https://htmlacademy.ru/profile/id276123).
+* Наставник: [Егор Глебов](https://htmlacademy.ru/profile/beast).
 
 ---
 
