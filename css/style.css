@@ -1,0 +1,343 @@
+/* global */
+body {
+  color: #565C66;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: #FEAFC3;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+.button {
+  display: block;
+  width: fit-content;
+  padding: 12px 32px;
+  color: #2D3440;
+  font-family: inherit;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  border: none;
+  border-radius: 26px;
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  background-color: #FCFCFC;
+  cursor: pointer;
+}
+
+.button-red {
+  color: #FCFCFC;
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  outline: 4px solid rgba(255, 47, 100, 0.3);
+  background-color: #FF2F64;
+}
+
+/* pages */
+.page-header {
+  padding: 24px 0;
+}
+
+.navigation-link {
+  color: #2D3440;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.user-block-phone {
+  color: #2D3440;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+/* slider */
+.slider-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #2D3440;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.slider-text {
+  margin-top: 0;
+  margin-bottom: 48px;
+  color: #2D3440;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* promo */
+.promo {
+  margin-bottom: 80px;
+}
+
+.promo-title {
+  margin-top: 0;
+  margin-bottom: 56px;
+  color: #2D3440;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+}
+
+.promo-article {
+  box-sizing: border-box;
+  max-width: 570px;
+  padding: 40px;
+  border-radius: 16px;
+  background-color: #FF7799;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.promo-article-first {
+  background-image: url("../img/promo-1.png");
+}
+
+.promo-article-second {
+  background-image: url("../img/promo-2.png");
+}
+
+.promo-name {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #2D3440;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.promo-description {
+  margin-top: 0;
+  margin-bottom: 32px;
+  color: #2D3440;
+  line-height: 22px;
+}
+
+/* product */
+.product {
+  margin-bottom: 80px;
+}
+
+.product-title {
+  margin-top: 0;
+  margin-bottom: 56px;
+  color: #2D3440;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+}
+
+.product-item {
+  box-sizing: border-box;
+  max-width: 270px;
+  border-radius: 8px;
+  background-color: #FCFCFC;
+}
+
+.product-name {
+  margin: 0;
+  color: #2D3440;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.product-description {
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.product-price {
+  margin: 0;
+  color: #2D3440;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* about */
+.about {
+  margin-bottom: 80px;
+  padding: 24px;
+  border-radius: 16px;
+  background-image: url("../img/about-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-wrapper {
+  padding: 56px 40px;
+  background-color: #FCFCFC;
+}
+
+.about-title {
+  margin-top: 0;
+  margin-bottom: 56px;
+  color: #2D3440;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center;
+}
+
+.about-item {
+  line-height: 32px;
+}
+
+/* promo-blog */
+.promo-blog {
+  box-sizing: border-box;
+  max-width: 570px;
+  min-height: 216px;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: #FCFCFC;
+  background-image: url("../img/promo-blog-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.promo-blog-category {
+  margin-top: 0;
+  margin-bottom: 12px;
+  line-height: 20px;
+}
+
+.promo-blog-title {
+  margin: 0;
+  color: #2D3440;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+/* promo-email-sub */
+.email-sub {
+  box-sizing: border-box;
+  max-width: 570px;
+  margin-bottom: 76px;
+  padding: 6px;
+  border-radius: 16px;
+  background-image: url("../img/promo-email-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.email-sub-wrapper {
+  padding: 26px;
+  border-radius: 16px;
+  background-color: #FCFCFC;
+}
+
+.email-sub-text {
+  margin-top: 0;
+  margin-bottom: 42px;
+  line-height: 22px;
+}
+
+.email-sub-input {
+  max-width: 332px;
+  padding: 14px 16px;
+  color: inherit;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 20px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+}
+
+.email-sub-input::placeholder {
+  color: #B9B9B9;
+}
+
+/* delivery */
+.delivery {
+  padding: 64px 64px 64px 100px;
+  border-radius: 16px;
+  background-image: url("../img/delivery-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.delivery-title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #2D3440;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.delivery-text {
+  margin: 0;
+  line-height: 22px;
+}
+
+/* delivery-form */
+.delivery-form {
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: #FCFCFC;
+}
+
+.delivery-form-text {
+  margin-top: 0;
+  margin-bottom: 32px;
+  line-height: 22px;
+}
+
+.delivery-form-label {
+  margin-bottom: 8px;
+  color: #2D3440;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.delivery-form-input {
+  padding: 14px 16px;
+  color: #2D3440;
+  font-size: 16px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+}
+
+.delivery-form-input::placeholder {
+  color: #B9B9B9;
+}
