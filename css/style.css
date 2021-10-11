@@ -176,6 +176,15 @@ body {
   background-color: #FCFCFC;
 }
 
+.product-image {
+  margin-left: 51px;
+  margin-top: -50px;
+  margin-bottom: 16px;
+  box-shadow: 0px 4px 12px 0px rgba(45, 52, 64, 0.1);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 .product-name {
   margin: 0;
   color: #2D3440;
@@ -493,7 +502,7 @@ body {
 
 /* catalog-filer */
 .catalog-filter {
-  margin-bottom: 48px;
+  margin-bottom: 98px;
 }
 
 .catalog-filter label,
