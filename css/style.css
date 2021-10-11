@@ -57,6 +57,11 @@ body {
   background-color: #FF2F64;
 }
 
+.button-filter {
+  outline: 4px solid #FCFCFC;
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
 /* pages */
 .page-header {
   padding: 24px 0;
@@ -66,6 +71,13 @@ body {
   color: #2D3440;
   line-height: 20px;
   text-decoration: none;
+}
+
+.navigation-link-current {
+  padding: 8px 16px;
+  color: #FCFCFC;
+  border-radius: 26px;
+  background-color: #FF4A78;
 }
 
 .user-block-phone {
@@ -444,4 +456,103 @@ body {
   color: inherit;
   text-decoration: none;
   border-bottom: 1px solid rgba(45, 52, 64, 0.5);
+}
+
+/* catalog-page */
+.inner-header {
+  padding: 24px 0;
+  margin-bottom: 32px;
+}
+
+/* breadcrumb */
+.breadcrumb {
+  color: #2D3440;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.breadcrumb-link {
+  color: inherit;
+  border-bottom: 1px solid #2D3440;
+  text-decoration: none;
+}
+
+.breadcrumb-link-current {
+  border-bottom: none;
+}
+
+.catalog-title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: #2D3440;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+/* catalog-filer */
+.catalog-filter {
+  margin-bottom: 48px;
+}
+
+.catalog-filter label,
+.catalog-filter legend {
+  color: #2D3440;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.catalog-filter fieldset {
+  border: none;
+}
+
+.select-control {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-family: inherit;
+  line-height: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.catalog-filter-wrapper {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.catalog-wrapper {
+  margin-bottom: 16px;
+}
+
+.catalog-page-control {
+  margin-bottom: 40px;
+  padding: 41px 0;
+}
+
+/* pagination */
+.product-page {
+  color: #2D3440;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.product-page-disable {
+  opacity: 0.2;
+}
+
+.product-page-current {
+  padding: 2px 8px;
+  border-radius: 50%;
+  background-color: #FCFCFC;
+}
+
+.catalog-divider {
+  max-width: 1170px;
+  height: 1px;
+  border: none;
+  background-color: rgba(252, 252, 252, 0.3);
 }
