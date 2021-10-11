@@ -26,18 +26,18 @@
           <a class="navigation-link" href="#">О компании</a>
         </li>
       </ul>
-    </nav>
 
-    <!-- user-block -->
-    <div class="user-block">
-      <a class="user-block-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-      <label>
-        <span class="visually-hidden">Поиск</span>
-        <input class="user-block-search" type="search">
-      </label>
-      <a class="user-block-login" href="#">Вход</a>
-      <a class="user-block-login" href="#">Корзина</a>
-    </div>
+      <!-- user-block -->
+      <div class="user-block">
+        <a class="user-block-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+        <label>
+          <span class="visually-hidden">Поиск</span>
+          <input class="user-block-search" type="search">
+        </label>
+        <a class="user-block-login" href="#">Вход</a>
+        <a class="user-block-login" href="#">Корзина</a>
+      </div>
+    </nav>
   </header>
 
   <!-- main -->
@@ -48,19 +48,25 @@
     <section class="slider">
       <h2 class="visually-hidden">Популярные товары магазина Gllacy Shop</h2>
       <div class="slider-slide">
-        <h3 class="slider-title">Нежный пломбир с клубничным джемом</h3>
-        <p class="slider-text">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-        <a class="button" href="#">Заказать</a>
+        <div class="slider-content">
+          <h3 class="slider-title">Нежный пломбир с клубничным джемом</h3>
+          <p class="slider-text">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
+          <a class="button" href="#">Заказать</a>
+        </div>
       </div>
       <div class="slider-slide">
-        <h3 class="slider-title">Сливочное мороженое со вкусом банана</h3>
-        <p class="slider-text">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
-        <a class="button" href="#">Заказать</a>
+        <div class="slider-content">
+          <h3 class="slider-title">Сливочное мороженое со вкусом банана</h3>
+          <p class="slider-text">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
+          <a class="button" href="#">Заказать</a>
+        </div>
       </div>
       <div class="slider-slide">
-        <h3 class="slider-title">Карамельный пломбир с маршмеллоу</h3>
-        <p class="slider-text">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
-        <a class="button" href="#">Заказать</a>
+        <div class="slider-content">
+          <h3 class="slider-title">Карамельный пломбир с маршмеллоу</h3>
+          <p class="slider-text">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
+          <a class="button" href="#">Заказать</a>
+        </div>
       </div>
     </section>
 
@@ -116,17 +122,19 @@
     <section class="promo">
       <h2 class="promo-title">Заказывайте мороженое<br> и получайте подарки!</h2>
 
-      <article class="promo-article promo-article-first">
-        <h4 class="promo-name">Малинка даром!</h4>
-        <p class="promo-description">При покупке 2 кг любого фруктового<br> мороженого, добавим в ваш заказ<br> банку малинового варенья бесплатно.</p>
-        <a class="button" href="#">Хочу подарок</a>
-      </article>
+      <div class="promo-wrapper">
+        <article class="promo-article promo-article-first">
+          <h4 class="promo-name">Малинка даром!</h4>
+          <p class="promo-description">При покупке 2 кг любого фруктового<br> мороженого, добавим в ваш заказ<br> банку малинового варенья бесплатно.</p>
+          <a class="button" href="#">Хочу подарок</a>
+        </article>
 
-      <article class="promo-article promo-article-second">
-        <h4 class="promo-name">Маршмеллоу даром!</h4>
-        <p class="promo-description">При покупке 2 кг пломбира, добавим<br> в ваш заказ упаковку нежных<br> зефирок совершенно бесплатно.</p>
-        <a class="button" href="#">Хочу подарок</a>
-      </article>
+        <article class="promo-article promo-article-second">
+          <h4 class="promo-name">Маршмеллоу даром!</h4>
+          <p class="promo-description">При покупке 2 кг пломбира, добавим<br> в ваш заказ упаковку нежных<br> зефирок совершенно бесплатно.</p>
+          <a class="button" href="#">Хочу подарок</a>
+        </article>
+      </div>
     </section>
 
     <!-- product-list -->
@@ -186,27 +194,31 @@
       </div>
     </section>
 
-    <article class="promo-blog">
-      <p class="promo-blog-category">Новое в нашем блоге</p>
-      <h4 class="promo-blog-title">10 способов сервировки<br> фруктовых щербетов<br> к столу</h4>
-    </article>
+    <div class="promo-row">
+      <article class="promo-blog">
+        <p class="promo-blog-category">Новое в нашем блоге</p>
+        <h4 class="promo-blog-title">10 способов сервировки<br> фруктовых щербетов<br> к столу</h4>
+      </article>
 
-    <!-- email-subscribe -->
-    <div class="email-sub">
-      <div class="email-sub-wrapper">
-        <p class="email-sub-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form class="email-sub-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="email-sub-input" type="email" name="sub-email" placeholder="email@example.com" required>
-          <button class="button button-red" type="submit">Отправить</button>
-        </form>
+      <!-- email-subscribe -->
+      <div class="email-sub">
+        <div class="email-sub-wrapper">
+          <p class="email-sub-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <form class="email-sub-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="email-sub-input" type="email" name="sub-email" placeholder="email@example.com" required>
+            <button class="button button-red" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
 
     <!-- delivery-form -->
     <section class="delivery">
-      <h2 class="visually-hidden">Форма заказа доставки мороженого</h2>
-      <b class="delivery-title">Доставка любимого мороженого на дом</b>
-      <p class="delivery-text">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом и курьер привезет вам ваш заказ в течение часа!</p>
+      <div class="delivery-content">
+        <h2 class="visually-hidden">Форма заказа доставки мороженого</h2>
+        <b class="delivery-title">Доставка любимого мороженого на дом</b>
+        <p class="delivery-text">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом и курьер привезет вам ваш заказ в течение часа!</p>
+      </div>
       <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
         <label class="delivery-form-label">
@@ -277,8 +289,10 @@
       </li>
     </ul>
 
-    <img class="footer-logo" src="img/logo-htmlacademy.svg" width="96" height="26.71" alt="Логотип HTML Academy">
-    <p class="footer-copyright">Сделано в <a href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
+    <div class="footer-column">
+      <img class="footer-logo" src="img/logo-htmlacademy.svg" width="96" height="26.71" alt="Логотип HTML Academy">
+      <p class="footer-copyright">Сделано в <a href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
+    </div>
   </footer>
 
   </body>
