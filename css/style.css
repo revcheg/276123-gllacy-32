@@ -1,5 +1,12 @@
 /* global */
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   margin: 0;
   color: #565C66;
   font-family: "Inter", "Arial", sans-serif;
@@ -110,6 +117,10 @@ body {
   text-decoration: none;
 }
 
+.main-index {
+  flex-grow: 1;
+}
+
 /* slider */
 .slider {
   max-width: 1170px;
@@ -136,6 +147,15 @@ body {
   color: #2D3440;
   font-size: 18px;
   line-height: 24px;
+}
+
+.slider-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 /* promo */
@@ -273,6 +293,7 @@ body {
 
 .about-wrapper {
   padding: 56px 40px;
+  border-radius: 16px;
   background-color: #FCFCFC;
 }
 
@@ -511,7 +532,7 @@ body {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  max-width: 1170px;
+  width: 1170px;
   margin: 0 auto;
   padding: 48px 14px 48px 4px;
   color: #2D3440;
