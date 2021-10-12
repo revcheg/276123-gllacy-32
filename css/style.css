@@ -121,6 +121,11 @@ body {
   flex-grow: 1;
 }
 
+.main-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
 /* slider */
 .slider {
   max-width: 1170px;
@@ -128,7 +133,7 @@ body {
 }
 
 .slider-content {
-  max-width: 470px;
+  width: 470px;
   margin-left: 70px;
 }
 
@@ -241,7 +246,7 @@ body {
 
 .product-item {
   box-sizing: border-box;
-  max-width: 270px;
+  width: 270px;
   border-radius: 8px;
   background-color: #FCFCFC;
 }
@@ -351,7 +356,7 @@ body {
 /* promo-email-sub */
 .email-sub {
   box-sizing: border-box;
-  max-width: 570px;
+  width: 570px;
   padding: 6px;
   border-radius: 16px;
   background-image: url("../img/promo-email-bg.jpg");
@@ -379,7 +384,7 @@ body {
 }
 
 .email-sub-input {
-  max-width: 332px;
+  width: 332px;
   padding: 14px 16px;
   color: inherit;
   font-size: 16px;
@@ -407,7 +412,7 @@ body {
 }
 
 .delivery-content {
-  max-width: 370px;
+  width: 370px;
 }
 
 .delivery-title {
@@ -435,7 +440,7 @@ body {
 
 .delivery-form {
   box-sizing: border-box;
-  max-width: 500px;
+  width: 500px;
   padding: 40px;
   border-radius: 8px;
   background-color: #FCFCFC;
@@ -482,7 +487,7 @@ body {
 
 .contact-wrapper {
   box-sizing: border-box;
-  max-width: 343px;
+  width: 343px;
   padding: 40px;
   box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
@@ -565,21 +570,16 @@ body {
 }
 
 /* catalog-page */
-.inner-header {
-  padding: 24px 0;
-  margin-bottom: 32px;
-}
-
 /* breadcrumb */
 .breadcrumb {
+
+}
+
+.breadcrumb-link {
   color: #2D3440;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
-}
-
-.breadcrumb-link {
-  color: inherit;
   border-bottom: 1px solid #2D3440;
   text-decoration: none;
 }
@@ -631,15 +631,28 @@ body {
 }
 
 .catalog-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 16px;
 }
 
 .catalog-page-control {
+  display: flex;
+  align-items: center;
   margin-bottom: 40px;
   padding: 41px 0;
 }
 
+.catalog-button-more {
+  margin-left: 494px;
+}
+
 /* pagination */
+.product-page-pagination {
+  margin-left: auto;
+}
+
 .product-page {
   color: #2D3440;
   line-height: 20px;
