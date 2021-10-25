@@ -438,9 +438,10 @@ body {
 }
 
 .product-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 270px 270px 270px 270px;
+  grid-column-gap: 30px;
+  grid-row-gap: 90px;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -448,12 +449,13 @@ body {
 .product-item {
   box-sizing: border-box;
   width: 270px;
+  padding: 0 40px 24px;
   border-radius: 8px;
   background-color: #FCFCFC;
 }
 
 .product-image {
-  margin-left: 51px;
+  margin-left: 12px;
   margin-top: -50px;
   margin-bottom: 16px;
   box-shadow: 0px 4px 12px 0px rgba(45, 52, 64, 0.1);
@@ -463,15 +465,17 @@ body {
 
 .product-name {
   margin: 0;
+  margin-bottom: 8px;
   color: #2D3440;
   font-size: 20px;
   font-weight: 700;
+  line-height: 24px;
   text-align: center;
 }
 
 .product-description {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   line-height: 22px;
   text-align: center;
 }
@@ -480,7 +484,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px 24px;
 }
 
 .product-price {
@@ -681,12 +684,18 @@ body {
   margin-bottom: 80px;
 }
 
-.delivery-form {
+.delivery-column {
   box-sizing: border-box;
   width: 500px;
   padding: 40px;
   border-radius: 8px;
   background-color: #FCFCFC;
+}
+
+.delivery-form {
+  display: grid;
+  grid-template-columns: 117px 287px;
+  grid-gap: 20px 16px;
 }
 
 .delivery-form-text {
@@ -696,13 +705,24 @@ body {
 }
 
 .delivery-form-label {
-  margin-bottom: 8px;
   color: #2D3440;
   font-weight: 700;
   line-height: 20px;
 }
 
+.delivery-form-row {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.delivery-form-address {
+  grid-column: 1 / -1;
+}
+
 .delivery-form-input {
+  box-sizing: border-box;
+  width: 100%;
+  max-height: 48px;
   padding: 14px 16px;
   color: #2D3440;
   font-size: inherit;
@@ -713,6 +733,11 @@ body {
 
 .delivery-form-input::placeholder {
   color: #B9B9B9;
+}
+
+.delivery-form-submit {
+  grid-column: 1 / -1;
+  justify-self: center;
 }
 
 /* contact */
@@ -929,16 +954,10 @@ body {
   list-style-type: none;
 }
 
-.catalog-wrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 16px;
-}
-
 .catalog-page-control {
   display: flex;
   align-items: center;
+  margin-top: 16px;
   margin-bottom: 40px;
   padding: 41px 0;
 }
