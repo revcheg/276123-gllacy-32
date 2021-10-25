@@ -267,6 +267,11 @@ body {
   margin: 0 auto;
 }
 
+.slider-slide {
+  padding-top: 136px;
+  padding-bottom: 126px;
+}
+
 .slider-content {
   width: 470px;
   margin-left: 70px;
