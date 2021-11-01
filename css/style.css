@@ -182,7 +182,7 @@ body {
 
 .navigation-item:focus-within .navigation-submenu {
   opacity: 1;
-  z-index: auto;
+  z-index: 4;
 }
 
 .navigation-link {
@@ -333,7 +333,7 @@ body {
 
 .user-block-wrapper:focus-within .user-block-box {
   opacity: 1;
-  z-index: auto;
+  z-index: 4;
 }
 
 .user-block-box {
