@@ -17,6 +17,11 @@ body {
   background-color: #FEAFC3;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -52,6 +57,7 @@ body {
   font-display: swap;
 }
 
+/* button */
 .button {
   box-sizing: border-box;
   display: block;
