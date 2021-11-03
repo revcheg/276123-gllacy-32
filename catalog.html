@@ -48,12 +48,14 @@
       <div class="user-block">
         <a class="user-block-phone" href="tel:+78005558628">+7 800 555-86-28</a>
         <div class="user-block-wrapper">
-          <label class="user-block-search" tabindex="0">
-            <span class="visually-hidden">Поиск</span>
-            <div class="user-block-box">
-              <input class="user-block-input" type="search" placeholder="Поиск по сайту">
-            </div>
-          </label>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <label class="user-block-search" tabindex="0">
+              <span class="visually-hidden">Поиск</span>
+              <div class="user-block-box">
+                <input class="user-block-input delivery-form-input" type="search" placeholder="Поиск по сайту" required>
+              </div>
+            </label>
+          </form>
         </div>
         <div class="user-block-wrapper">
           <a class="user-block-button user-block-signin" href="#">Вход</a>
@@ -62,11 +64,11 @@
             <form class="user-block-form" action="https://echo.htmlacademy.ru/" method="post">
               <label>
                 <span class="visually-hidden">Поле ввода почты</span>
-                <input class="user-block-input" type="email" placeholder="Ваш Email">
+                <input class="user-block-input delivery-form-input" type="email" placeholder="Ваш Email">
               </label>
               <label>
                 <span class="visually-hidden">Поле ввода пароля</span>
-                <input class="user-block-input" type="password" placeholder="Ваш пароль">
+                <input class="user-block-input delivery-form-input" type="password" placeholder="Ваш пароль">
               </label>
               <div class="user-block-row">
                 <button class="button button-red" type="submit">Войти</button>
