@@ -413,27 +413,28 @@
     </div>
   </footer>
 
-  <div class="popup-overlay visually-hidden"></div>
-  <div class="popup visually-hidden">
-    <button class="popup-close" type="button">
-      <span class="visually-hidden">Закрыть попап</span>
-    </button>
-    <p class="popup-title">Мы обязательно ответим вам!</p>
-    <form class="user-block-form" action="https://echo.htmlacademy.ru/" method="post">
-      <label>
-        <span class="visually-hidden">Поле Имя и фамилия</span>
-        <input class="user-block-input" type="text" placeholder="Имя и фамилия">
-      </label>
-      <label>
-        <span class="visually-hidden">Поле ввода почты</span>
-        <input class="user-block-input" type="email" placeholder="email@example.com">
-      </label>
-      <label>
-        <span class="visually-hidden">Поле ввода в свободной форме</span>
-        <input class="user-block-input" type="email" placeholder="В свободной форме">
-      </label>
-      <button class="button button-red popup-submit" type="submit">Отправить</button>
-    </form>
+  <div class="popup-overlay popup-hide">
+    <div class="popup">
+      <button class="popup-close" type="button">
+        <span class="visually-hidden">Закрыть попап</span>
+      </button>
+      <p class="popup-title">Мы обязательно ответим вам!</p>
+      <form class="user-block-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label>
+          <span class="visually-hidden">Поле Имя и фамилия</span>
+          <input class="user-block-input delivery-form-input" type="text" placeholder="Имя и фамилия">
+        </label>
+        <label>
+          <span class="visually-hidden">Поле ввода почты</span>
+          <input class="user-block-input delivery-form-input" type="email" placeholder="email@example.com">
+        </label>
+        <label>
+          <span class="visually-hidden">Поле ввода в свободной форме</span>
+          <input class="user-block-input delivery-form-input" type="email" placeholder="В свободной форме">
+        </label>
+        <button class="button button-red popup-submit" type="submit">Отправить</button>
+      </form>
+    </div>
   </div>
 
   </body>
