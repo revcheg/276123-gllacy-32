@@ -6,9 +6,11 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  min-width: 1170px;
+  box-sizing: border-box;
+  min-width: 1366px;
   min-height: 100%;
   margin: 0;
+  padding: 0 98px;
   color: #565C66;
   font-family: 'Inter', 'Arial', sans-serif;
   font-size: 16px;
@@ -780,6 +782,7 @@ img {
   transition: 0.2s;
 }
 
+/* slider-dots */
 .slider-control {
   display: flex;
   justify-content: space-between;
@@ -1595,12 +1598,18 @@ img {
   width: 100%;
   height: 36px;
   padding: 8px 16px;
+  color: #2D3440;
   font-size: 14px;
   font-family: inherit;
   line-height: 20px;
   border: none;
   border-radius: 20px;
   background-color: rgba(252, 252, 252, 0.3);
+  background-image: url('../img/arrow-down.svg');
+  background-repeat: no-repeat;
+  background-position: right 13px center;
+  background-size: 16px;
+  appearance: none;
   cursor: pointer;
   transition: 0.2s;
 }
@@ -1747,8 +1756,12 @@ img {
   border-color: #FCFCFC;
 }
 
-.control:hover .control-mark-square::after {
-  background-color: transparent;
+.control:hover .control-mark-square {
+  fill: #FCFCFC;
+}
+
+.control:focus-within .control-mark-square {
+  fill: #FCFCFC;
 }
 
 .control-mark {
@@ -1786,28 +1799,27 @@ img {
 }
 
 .control-mark-square {
-  border-radius: 3px;
+  fill: #2D3440;
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 0;
 }
 
 .control-mark-square::after {
-  top: 1.48px;
-  right: 0.67px;
-  left: auto;
-  width: 11.37px;
-  height: 9.48px;
-  border-radius: 0;
-  background-color: transparent;
-  background-image: url('../img/union.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  opacity: 0;
-  transform: none;
+  display: none;
 }
 
-.control-input:checked ~ .control-mark-square::after {
+.control-mark-on {
+  opacity: 0;
+}
+
+.control-input:checked ~ .control-mark-off {
+  opacity: 0;
+}
+
+.control-input:checked ~ .control-mark-on {
   opacity: 1;
-  transform: none;
 }
 
 .control-label {
@@ -1837,13 +1849,17 @@ img {
 
 .product-page {
   box-sizing: border-box;
-  width: 24px;
+  min-width: 24px;
+  min-height: 24px;
   padding: 2px 6px;
   color: #2D3440;
   line-height: 20px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px;
   transition: 0.2s;
 }
 
@@ -1861,6 +1877,17 @@ img {
 
 .product-page-active {
   background-color: #FCFCFC;
+}
+
+.product-page-prev {
+  margin-right: 16px;
+  background-image: url('../img/arrow-left.svg');
+}
+
+.product-page-next {
+  margin-left: 16px;
+  background-image: url('../img/arrow-left.svg');
+  transform: rotate(180deg);
 }
 
 .catalog-divider {
