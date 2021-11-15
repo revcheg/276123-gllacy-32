@@ -17,6 +17,18 @@ body {
   background-color: #FEAFC3;
 }
 
+.body-pink {
+  background-color: #FEAFC3;
+}
+
+.body-blue {
+  background-color: #69A9FF;
+}
+
+.body-yellow {
+  background-color: #FCC850;
+}
+
 img {
   max-width: 100%;
   object-fit: contain;
@@ -241,6 +253,11 @@ img {
   z-index: -1;
 }
 
+.navigation-submenu-active {
+  opacity: 1;
+  z-index: 4;
+}
+
 .navigation-subtitle {
   display: block;
   margin: 0 16px 4px;
@@ -358,6 +375,11 @@ img {
   z-index: -1;
 }
 
+.user-block-box-active {
+  opacity: 1;
+  z-index: 4;
+}
+
 .user-block-widebox {
   width: 420px;
   padding: 48px 48px 52px;
@@ -417,27 +439,29 @@ img {
 }
 
 .basket-price {
-  margin-right: 52px;
+  margin-right: 38px;
   font-size: 18px;
   line-height: 22px;
 }
 
 .basket-delete {
+  box-sizing: border-box;
   width: 16px;
   height: 16px;
+  padding: 15px;
   border: none;
   background-color: transparent;
   background-image: url('../img/close.svg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 16px;
   cursor: pointer;
   transition: 0.2s;
 }
 
 .basket-delete:hover,
 .basket-delete:focus {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .basket-delete:active {
@@ -592,8 +616,13 @@ img {
 }
 
 .slider-slide {
+  display: none;
   padding-top: 136px;
   padding-bottom: 126px;
+}
+
+.slider-slide-active {
+  display: block;
 }
 
 .slider-content {
@@ -668,6 +697,18 @@ img {
 
 .slider-box:nth-child(2) {
   margin-right: 41px;
+}
+
+.body-pink .slider-box-active::before {
+  background-color: #FFCBD8;
+}
+
+.body-blue .slider-box-active::before {
+  background-color: #9FC8FF;
+}
+
+.body-yellow .slider-box-active::before {
+  background-color: #FCDC92;
 }
 
 .slider-image {
@@ -1764,10 +1805,6 @@ img {
   transform: none;
 }
 
-.control-input:checked ~ .control-mark-square {
-  /* border: 0; */
-}
-
 .control-input:checked ~ .control-mark-square::after {
   opacity: 1;
   transform: none;
@@ -1868,20 +1905,23 @@ img {
   position: absolute;
   top: 32px;
   right: 32px;
+  box-sizing: border-box;
   width: 20px;
   height: 20px;
+  padding: 15px;
   border: none;
   background-color: transparent;
   background-image: url('../img/close.svg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 20px;
   cursor: pointer;
   transition: 0.2s;
 }
 
 .popup-close:hover,
 .popup-close:focus {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .popup-close:active {
