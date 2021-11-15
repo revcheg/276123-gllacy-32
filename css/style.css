@@ -105,7 +105,7 @@ img {
 
 .button:disabled {
   color: #B9B9B9;
-  font-size: 400;
+  font-weight: 400;
   box-shadow: none;
   outline: 4px solid rgba(252, 252, 252, 0.4);
   background-color: #E7E7E7;
@@ -134,10 +134,10 @@ img {
 
 .button-red:disabled {
   color: #565C66;
-  font-size: 400;
+  font-weight: 400;
   box-shadow: none;
   outline: 4px solid rgba(185, 185, 185, 0.3);
-  background-color: #E7E7E7;
+  background-color: #B9B9B9;
 }
 
 .button-filter {
@@ -699,15 +699,15 @@ img {
   margin-right: 41px;
 }
 
-.body-pink .slider-box-active::before {
+.body-pink .slider-box::before {
   background-color: #FFCBD8;
 }
 
-.body-blue .slider-box-active::before {
+.body-blue .slider-box::before {
   background-color: #9FC8FF;
 }
 
-.body-yellow .slider-box-active::before {
+.body-yellow .slider-box::before {
   background-color: #FCDC92;
 }
 
@@ -1838,7 +1838,6 @@ img {
 .product-page {
   box-sizing: border-box;
   width: 24px;
-  /* height: 24px; */
   padding: 2px 6px;
   color: #2D3440;
   line-height: 20px;
