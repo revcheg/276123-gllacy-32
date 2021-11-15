@@ -1694,6 +1694,22 @@ img {
   cursor: pointer;
 }
 
+.control:hover .control-mark {
+  border-color: #FCFCFC;
+}
+
+.control:hover .control-mark::after {
+  background-color: #FCFCFC;
+}
+
+.control:focus-within .control-mark {
+  border-color: #FCFCFC;
+}
+
+.control:hover .control-mark-square::after {
+  background-color: transparent;
+}
+
 .control-mark {
   position: absolute;
   top: 2px;
@@ -1703,6 +1719,7 @@ img {
   height: 16px;
   border: 2px solid #2D3440;
   border-radius: 50%;
+  transition: 0.2s;
 }
 
 .control-mark::after {
@@ -1718,6 +1735,11 @@ img {
   transform: translate(-50%, -50%) scale(0);
 }
 
+.control-mark-disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
 .control-input:checked ~ .control-mark::after {
   transform: translate(-50%, -50%) scale(1);
 }
@@ -1727,22 +1749,28 @@ img {
 }
 
 .control-mark-square::after {
-  width: 100%;
-  height: 100%;
+  top: 1.48px;
+  right: 0.67px;
+  left: auto;
+  width: 11.37px;
+  height: 9.48px;
   border-radius: 0;
   background-color: transparent;
-  background-image: url('../img/checkbox.svg');
+  background-image: url('../img/union.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  opacity: 0;
+  transform: none;
 }
 
 .control-input:checked ~ .control-mark-square {
-  border: 0;
+  /* border: 0; */
 }
 
 .control-input:checked ~ .control-mark-square::after {
-  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  transform: none;
 }
 
 .control-label {
