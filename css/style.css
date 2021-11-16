@@ -353,7 +353,7 @@ img {
   background-color: rgba(252, 252, 252, 0.5);
 }
 
-.user-block-search:focus-within {
+.user-block-wrapper:focus-within .user-block-search {
   background-color: #FCFCFC;
 }
 
@@ -1278,17 +1278,15 @@ img {
 }
 
 .delivery-form-label {
+  margin-bottom: 8px;
   color: #2D3440;
   font-weight: 700;
   line-height: 20px;
 }
 
 .delivery-form-row {
-  position: relative;
   display: flex;
-  margin: 0;
-  margin-bottom: 8px;
-  padding-right: 16px;
+  flex-wrap: wrap;
 }
 
 .delivery-info {
@@ -1307,6 +1305,11 @@ img {
 }
 
 .delivery-info:hover .delivery-tooltip {
+  opacity: 1;
+  z-index: 1;
+}
+
+.delivery-info:focus-within .delivery-tooltip {
   opacity: 1;
   z-index: 1;
 }
@@ -1415,6 +1418,7 @@ img {
 .delivery-form-submit {
   grid-column: 1 / -1;
   justify-self: center;
+  margin-top: 12px;
 }
 
 /* contact */

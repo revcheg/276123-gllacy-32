@@ -47,12 +47,12 @@
         <a class="user-block-phone" href="tel:+78005558628">+7 800 555-86-28</a>
         <div class="user-block-wrapper">
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <label class="user-block-search">
+            <label class="user-block-search" for="search">
               <span class="visually-hidden">Поиск по сайту</span>
-              <div class="user-block-box">
-                <input class="user-block-input delivery-form-input" type="search" placeholder="Поиск по сайту" required>
-              </div>
             </label>
+            <div class="user-block-box">
+              <input class="user-block-input delivery-form-input" id="search" type="search" placeholder="Поиск по сайту" required>
+            </div>
           </form>
         </div>
         <div class="user-block-wrapper">
@@ -323,32 +323,32 @@
       <div class="delivery-column">
         <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
         <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="delivery-form-label">
-            <div class="delivery-form-row">
+          <div class="delivery-form-row">
+            <label class="delivery-form-label" for="delivery-date">
               Дата
-              <div class="delivery-info" tabindex="0">
-                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                <span class="delivery-tooltip">Введите желаемую дату доставки</span>
-              </div>
+            </label>
+            <div class="delivery-info" tabindex="0">
+              <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+              <span class="delivery-tooltip">Введите желаемую дату доставки</span>
             </div>
-            <input class="delivery-form-input" type="text" name="delivery-date" placeholder="01.04.2020" required>
-          </label>
-          <label class="delivery-form-label">
-            <p class="delivery-form-row">
-              Телефон
-            </p>
-            <input class="delivery-form-input" type="tel" name="delivery-phone" placeholder="+7 800 999-00-00" required>
-          </label>
-          <label class="delivery-form-label delivery-form-address">
-            <div class="delivery-form-row">
+            <input class="delivery-form-input" id="delivery-date" type="text" name="delivery-date" placeholder="01.04.2020" required>
+          </div>
+          <div class="delivery-form-row">
+            <label class="delivery-form-label" for="delivery-phone">
+                Телефон
+            </label>
+            <input class="delivery-form-input" id="delivery-phone" type="tel" name="delivery-phone" placeholder="+7 800 999-00-00" required>
+          </div>
+          <div class="delivery-form-row delivery-form-address">
+            <label class="delivery-form-label" for="delivery-address">
               Адресс
-              <div class="delivery-info" tabindex="0">
-                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                <span class="delivery-tooltip">Введите название улицы, дома и квартиры</span>
-              </div>
+            </label>
+            <div class="delivery-info" tabindex="0">
+              <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+              <span class="delivery-tooltip">Введите название улицы, дома и квартиры</span>
             </div>
-            <input class="delivery-form-input" type="text" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8" required>
-          </label>
+            <input class="delivery-form-input" id="delivery-address" type="text" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8" required>
+          </div>
           <button class="button button-red delivery-form-submit" type="submit">
             Отправить
             <svg class="button-spinner" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><circle cx="8" cy="8" r="7" stroke="#FCFCFC" stroke-linecap="round" stroke-width="2" opacity=".25"/><path stroke="#FCFCFC" stroke-linecap="round" stroke-width="2" d="M15 8a7 7 0 0 0-7-7"/></svg>
@@ -414,7 +414,7 @@
 
     <div class="footer-column">
       <a href="https://htmlacademy.ru" target="_blank">
-        <img class="footer-logo" src="img/logo-htmlacademy.svg" width="96" height="26.71" alt="Логотип HTML Academy.">
+        <img class="footer-logo" src="img/logo-htmlacademy.svg" width="96" height="27" alt="Логотип HTML Academy.">
       </a>
       <p class="footer-copyright">Сделано в <a href="https://htmlacademy.ru" target="_blank">.html academy</a> © 2021</p>
     </div>
