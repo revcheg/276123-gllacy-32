@@ -947,7 +947,7 @@ img {
   margin-top: 0;
   margin-bottom: 32px;
   color: #2D3440;
-  line-height: 22px;
+  line-height: 23px;
 }
 
 /* product */
@@ -985,7 +985,7 @@ img {
 .product-image {
   margin-left: 12px;
   margin-top: -50px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   box-shadow: 0px 4px 12px 0px rgba(45, 52, 64, 0.1);
   border-radius: 50%;
   overflow: hidden;
@@ -1018,7 +1018,7 @@ img {
   margin: 0;
   color: #2D3440;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .product-basket {
@@ -1086,7 +1086,7 @@ img {
 }
 
 .about-wrapper {
-  padding: 56px 40px 16px;
+  padding: 56px 40px 15px;
   border-radius: 16px;
   background-color: #FCFCFC;
 }
@@ -1113,10 +1113,10 @@ img {
 .about-item {
   position: relative;
   box-sizing: border-box;
-  max-width: 506px;
+  width: 506px;
   margin-bottom: 40px;
   padding-left: 64px;
-  line-height: 22px;
+  line-height: 23px;
 }
 
 .about-item::before {
@@ -1220,10 +1220,14 @@ img {
 
 /* delivery */
 .delivery {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 64px 64px 64px 100px;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding: 65px 64px 65px 100px;
   border-radius: 16px;
   background-image: url('../img/delivery-bg.jpg');
   background-repeat: no-repeat;
@@ -1232,7 +1236,8 @@ img {
 }
 
 .delivery-content {
-  width: 370px;
+  width: 375px;
+  margin-top: 8px;
 }
 
 .delivery-title {
@@ -1247,17 +1252,10 @@ img {
 
 .delivery-text {
   margin: 0;
-  line-height: 22px;
+  line-height: 23px;
 }
 
 /* delivery-form */
-.delivery {
-  box-sizing: border-box;
-  max-width: 1170px;
-  margin: 0 auto;
-  margin-bottom: 80px;
-}
-
 .delivery-column {
   box-sizing: border-box;
   width: 500px;
@@ -1447,7 +1445,7 @@ img {
 .contact-address {
   margin-top: 0;
   margin-bottom: 24px;
-  line-height: 22px;
+  line-height: 24px;
 }
 
 .contact-address-source {
@@ -1486,7 +1484,7 @@ img {
 .footer {
   box-sizing: border-box;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   width: 1170px;
   margin: 0 auto;
   padding: 48px 14px 48px 4px;
@@ -1509,7 +1507,6 @@ img {
 
 .footer-item:nth-child(odd) {
   min-width: 150px;
-  margin-right: 10px;
 }
 
 .footer-item:nth-child(even) {
@@ -1548,7 +1545,7 @@ img {
 }
 
 .footer-logo {
-  margin-bottom: 14.29px;
+  margin-bottom: 7px;
 }
 
 .footer-copyright {
