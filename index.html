@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   </head>
   <body>
 
@@ -47,11 +50,14 @@
         <a class="user-block-phone" href="tel:+78005558628">+7 800 555-86-28</a>
         <div class="user-block-wrapper">
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <label class="user-block-search" for="search">
+            <label class="user-block-search" for="search" tabindex="0">
               <span class="visually-hidden">Поиск по сайту</span>
             </label>
             <div class="user-block-box">
-              <input class="user-block-input delivery-form-input" id="search" type="search" placeholder="Поиск по сайту" required>
+              <input class="user-block-input delivery-form-input" id="search" type="search" name="search" placeholder="Поиск по сайту" required>
+              <button class="user-block-close" type="button">
+                <span class="visually-hidden">Закрыть поле поиска</span>
+              </button>
             </div>
           </form>
         </div>
@@ -62,11 +68,11 @@
             <form class="user-block-form" action="https://echo.htmlacademy.ru/" method="post">
               <label>
                 <span class="visually-hidden">Поле ввода почты</span>
-                <input class="user-block-input delivery-form-input" type="email" placeholder="Ваш Email">
+                <input class="user-block-input delivery-form-input" type="email" name="user-name" placeholder="Ваш Email" required>
               </label>
               <label>
                 <span class="visually-hidden">Поле ввода пароля</span>
-                <input class="user-block-input delivery-form-input" type="password" placeholder="Ваш пароль">
+                <input class="user-block-input delivery-form-input" type="password" name="user-password" placeholder="Ваш пароль" required>
               </label>
               <div class="user-block-row">
                 <button class="button button-red" type="submit">Войти</button>
@@ -229,12 +235,12 @@
           <p class="product-description">Сливочное мороженое с малиновым джемом</p>
           <div class="product-row">
             <b class="product-price">310 ₽/кг</b>
-            <a class="product-basket" href="#">
+            <button class="product-basket" type="button">
               <span class="visually-hidden">Добавить в корзину</span>
               <svg class="product-basket-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="none" width="18" height="18" viewBox="0 0 18 18">
                 <path fill-rule="evenodd" d="M1.312 1.49a.667.667 0 0 0 0 1.333h2.061l.54 2.696a.659.659 0 0 0 .011.056l1.089 5.44a1.97 1.97 0 0 0 1.963 1.586h6.325a1.97 1.97 0 0 0 1.963-1.587l.001-.005 1.043-5.469a.667.667 0 0 0-.655-.791H5.12l-.545-2.724a.667.667 0 0 0-.654-.535H1.312Zm5.009 9.264-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.957a.637.637 0 0 1-.637-.512v-.001Zm-1.11 4.44a1.318 1.318 0 1 1 2.635 0 1.318 1.318 0 0 1-2.636 0Zm7.17 0a1.318 1.318 0 1 1 2.635 0 1.318 1.318 0 0 1-2.636 0Z" clip-rule="evenodd"/>
               </svg>
-            </a>
+            </button>
           </div>
         </section>
         <section class="product-item">
@@ -243,12 +249,12 @@
           <p class="product-description">Фисташковый пломбир с кусочками шоколада</p>
           <div class="product-row">
             <b class="product-price">340 ₽/кг</b>
-            <a class="product-basket" href="#">
+            <button class="product-basket" type="button">
               <span class="visually-hidden">Добавить в корзину</span>
               <svg class="product-basket-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="none" width="18" height="18" viewBox="0 0 18 18">
                 <path fill-rule="evenodd" d="M1.312 1.49a.667.667 0 0 0 0 1.333h2.061l.54 2.696a.659.659 0 0 0 .011.056l1.089 5.44a1.97 1.97 0 0 0 1.963 1.586h6.325a1.97 1.97 0 0 0 1.963-1.587l.001-.005 1.043-5.469a.667.667 0 0 0-.655-.791H5.12l-.545-2.724a.667.667 0 0 0-.654-.535H1.312Zm5.009 9.264-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.957a.637.637 0 0 1-.637-.512v-.001Zm-1.11 4.44a1.318 1.318 0 1 1 2.635 0 1.318 1.318 0 0 1-2.636 0Zm7.17 0a1.318 1.318 0 1 1 2.635 0 1.318 1.318 0 0 1-2.636 0Z" clip-rule="evenodd"/>
               </svg>
-            </a>
+            </button>
           </div>
         </section>
         <section class="product-item">
@@ -257,12 +263,12 @@
           <p class="product-description">Крем-брюле<br> с черничным джемом</p>
           <div class="product-row">
             <b class="product-price">330 ₽/кг</b>
-            <a class="product-basket" href="#">
+            <button class="product-basket" type="button">
               <span class="visually-hidden">Добавить в корзину</span>
               <svg class="product-basket-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="none" width="18" height="18" viewBox="0 0 18 18">
                 <path fill-rule="evenodd" d="M1.312 1.49a.667.667 0 0 0 0 1.333h2.061l.54 2.696a.659.659 0 0 0 .011.056l1.089 5.44a1.97 1.97 0 0 0 1.963 1.586h6.325a1.97 1.97 0 0 0 1.963-1.587l.001-.005 1.043-5.469a.667.667 0 0 0-.655-.791H5.12l-.545-2.724a.667.667 0 0 0-.654-.535H1.312Zm5.009 9.264-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.957a.637.637 0 0 1-.637-.512v-.001Zm-1.11 4.44a1.318 1.318 0 1 1 2.635 0 1.318 1.318 0 0 1-2.636 0Zm7.17 0a1.318 1.318 0 1 1 2.635 0 1.318 1.318 0 0 1-2.636 0Z" clip-rule="evenodd"/>
               </svg>
-            </a>
+            </button>
           </div>
         </section>
         <section class="product-item">
@@ -271,12 +277,12 @@
           <p class="product-description">Ванильный пломбир<br> со сладкой посыпкой</p>
           <div class="product-row">
             <b class="product-price">320 ₽/кг</b>
-            <a class="product-basket" href="#">
+            <button class="product-basket" type="button">
               <span class="visually-hidden">Добавить в корзину</span>
               <svg class="product-basket-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="none" width="18" height="18" viewBox="0 0 18 18">
                 <path fill-rule="evenodd" d="M1.312 1.49a.667.667 0 0 0 0 1.333h2.061l.54 2.696a.659.659 0 0 0 .011.056l1.089 5.44a1.97 1.97 0 0 0 1.963 1.586h6.325a1.97 1.97 0 0 0 1.963-1.587l.001-.005 1.043-5.469a.667.667 0 0 0-.655-.791H5.12l-.545-2.724a.667.667 0 0 0-.654-.535H1.312Zm5.009 9.264-.935-4.672h9.462l-.892 4.675a.637.637 0 0 1-.636.51H6.957a.637.637 0 0 1-.637-.512v-.001Zm-1.11 4.44a1.318 1.318 0 1 1 2.635 0 1.318 1.318 0 0 1-2.636 0Zm7.17 0a1.318 1.318 0 1 1 2.635 0 1.318 1.318 0 0 1-2.636 0Z" clip-rule="evenodd"/>
               </svg>
-            </a>
+            </button>
           </div>
         </section>
       </div>
@@ -429,15 +435,15 @@
       <form class="user-block-form" action="https://echo.htmlacademy.ru/" method="post">
         <label>
           <span class="visually-hidden">Поле Имя и фамилия</span>
-          <input class="user-block-input delivery-form-input" type="text" placeholder="Имя и фамилия">
+          <input class="user-block-input delivery-form-input" type="text" name="modal-name" placeholder="Имя и фамилия">
         </label>
         <label>
           <span class="visually-hidden">Поле ввода почты</span>
-          <input class="user-block-input delivery-form-input" type="email" placeholder="email@example.com">
+          <input class="user-block-input delivery-form-input" type="email" name="modal-email" placeholder="email@example.com" required>
         </label>
         <label>
           <span class="visually-hidden">Поле ввода в свободной форме</span>
-          <input class="user-block-input delivery-form-input" type="email" placeholder="В свободной форме">
+          <textarea class="user-block-input delivery-form-input delivery-form-textarea" name="modal-text" placeholder="В свободной форме" required></textarea>
         </label>
         <button class="button button-red popup-submit" type="submit">Отправить</button>
       </form>
