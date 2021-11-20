@@ -261,7 +261,7 @@ img {
   left: 0;
   box-sizing: border-box;
   min-width: 138px;
-  padding: 16px 0 4px;
+  padding: 16px 0 10px;
   color: #2d3440;
   box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
   border-radius: 4px;
@@ -278,8 +278,8 @@ img {
 
 .navigation-subtitle {
   display: block;
-  margin: 0 16px 4px;
-  padding-bottom: 12px;
+  margin: 0 16px 6px;
+  padding-bottom: 11px;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
@@ -294,7 +294,7 @@ img {
 
 .navigation-sublink {
   display: block;
-  padding: 8px 16px;
+  padding: 6px 16px;
   color: inherit;
   font-size: 14px;
   line-height: 20px;
@@ -381,7 +381,7 @@ img {
 .user-block-box {
   position: absolute;
   top: 40px;
-  right: 0;
+  right: 1px;
   box-sizing: border-box;
   width: 356px;
   padding: 24px 16px;
@@ -426,7 +426,7 @@ img {
 
 .user-block-widebox {
   width: 420px;
-  padding: 40px 48px 52px;
+  padding: 48px 52px;
 }
 
 .user-block-emptybox {
@@ -489,6 +489,8 @@ img {
 }
 
 .basket-delete {
+  position: relative;
+  right: -8px;
   box-sizing: border-box;
   width: 16px;
   height: 16px;
@@ -575,10 +577,6 @@ img {
   margin-left: 23px;
   padding: 0;
   list-style-type: none;
-}
-
-.user-block-item:not(:last-child) {
-  margin-bottom: 4px;
 }
 
 .user-block-link {
@@ -920,7 +918,7 @@ img {
 
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
-  fill: #2d3440;
+  background: #2d3440;
 }
 
 .social-icon {
@@ -961,7 +959,7 @@ img {
 .promo-article {
   box-sizing: border-box;
   width: 570px;
-  padding: 40px;
+  padding: 41px 40px;
   border-radius: 16px;
   background-color: #ff7799;
   background-repeat: no-repeat;
@@ -991,7 +989,7 @@ img {
   margin-top: 0;
   margin-bottom: 32px;
   color: #2d3440;
-  line-height: 23px;
+  line-height: 22px;
 }
 
 /* product */
@@ -1001,7 +999,7 @@ img {
 
 .product-title {
   margin-top: 0;
-  margin-bottom: 106px;
+  margin-bottom: 107px;
   color: #2d3440;
   font-size: 32px;
   font-weight: 900;
@@ -1029,9 +1027,10 @@ img {
 }
 
 .product-image {
+  display: block;
   margin-left: 12px;
   margin-top: -50px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.1);
   border-radius: 50%;
   overflow: hidden;
@@ -1065,7 +1064,8 @@ img {
   margin: 0;
   color: #2d3440;
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 700;
+  word-spacing: 2px;
 }
 
 .product-basket {
@@ -1090,6 +1090,7 @@ img {
 
 .product-basket:focus {
   outline: 2px solid #2d3440;
+  background-color: #FF2F64;
 }
 
 .product-basket:active {
@@ -1135,7 +1136,7 @@ img {
 }
 
 .about-wrapper {
-  padding: 56px 40px 15px;
+  padding: 57px 40px 18px;
   border-radius: 16px;
   background-color: #fcfcfc;
 }
@@ -1165,7 +1166,7 @@ img {
   width: 506px;
   margin-bottom: 40px;
   padding-left: 64px;
-  line-height: 23px;
+  line-height: 22px;
 }
 
 .about-item::before {
@@ -1217,13 +1218,13 @@ img {
   background-color: #fcfcfc;
   background-image: url("../img/promo-blog-bg.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-size: cover;
 }
 
 .promo-blog-category {
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   line-height: 20px;
 }
 
@@ -1313,7 +1314,7 @@ img {
 .delivery-column {
   box-sizing: border-box;
   width: 500px;
-  padding: 40px;
+  padding: 41px 40px;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
   background-color: #fcfcfc;
@@ -1543,7 +1544,7 @@ img {
 .contact-address {
   margin-top: 0;
   margin-bottom: 24px;
-  line-height: 24px;
+  line-height: 22px;
 }
 
 .contact-address-source {
@@ -1552,6 +1553,7 @@ img {
   color: #2d3440;
   font-size: 20px;
   font-weight: 700;
+  line-height: 24px;
 }
 
 .contact-phone {
@@ -1566,6 +1568,7 @@ img {
   color: #2d3440;
   font-size: 20px;
   font-weight: 700;
+  line-height: 24px;
 }
 
 .contact-phone-source a {
@@ -1593,6 +1596,10 @@ img {
   padding-top: 45px;
 }
 
+.footer-catalog .social {
+  padding-top: 2px;
+}
+
 .footer .social {
   margin-right: 300px;
 }
@@ -1605,6 +1612,10 @@ img {
   margin-right: auto;
   padding: 0;
   list-style-type: none;
+}
+
+.footer-item {
+  margin-bottom: 3px;
 }
 
 .footer-item:nth-child(odd) {
@@ -1648,6 +1659,7 @@ img {
 
 .footer-column {
   max-width: 195px;
+  padding-top: 2px;
 }
 
 .footer-logo {
